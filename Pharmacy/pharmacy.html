@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Reports</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="pharmacy.css">
+</head>
+<body>
+    <div class="background">
+        <header>
+            <nav class="panel">
+                <div class="add-name">
+                    <img src="../images/logo.png" alt="logo" id="logo">DrugVault
+                </div>
+                <div class="panel-ops">
+                    <button onclick="window.location.href='../homePage/home.html';">Home</button>
+                    <button style="text-decoration: underline;" onclick="location.reload()">Pharmacy</button>
+                    <button onclick="window.location.href='../SupplyChain/supply.html';">Supply Chain</button>
+                    <button onclick="window.location.href='../ordersPage/order.html';">Orders</button>
+                    <button onclick="window.location.href='../QualityControlPage/qc.html';">Quality Control</button>
+                    <button onclick="window.location.href='../reportsPage/report.html';">Reports</button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="intro transparent-box">
+                <h1>Pharmacy Reports</h1>
+                <p>Access detailed pharmacy reports to monitor stock levels, sales, and other key metrics.</p>
+            </div>
+            <hr>
+            <section class="report-section transparent-box">
+                <h2>Pharmacy Stock Overview</h2>
+                <table class="pharmacy-table">
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Stock Quantity</th>
+                            <th>Reorder Level</th>
+                            <th>Category</th>
+                            <th>Expiry Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Drug A</td>
+                            <td>150</td>
+                            <td>200</td>
+                            <td>Antibiotic</td>
+                            <td>01/01/2025</td>
+                        </tr>
+                        <tr>
+                            <td>Drug B</td>
+                            <td>300</td>
+                            <td>150</td>
+                            <td>Pain Reliever</td>
+                            <td>15/03/2025</td>
+                        </tr>
+                        <tr>
+                            <td>Drug C</td>
+                            <td>1200</td>
+                            <td>500</td>
+                            <td>Antibiotic</td>
+                            <td>30/06/2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div id="footersection">
+            <p id="footerText">Connect with us through our socials !!</p>
+            <div id="links">
+                <a href="https://www.linkedin.com/in/archit-gupta-77b287251/" id="linkedin"><img src="https://imgs.search.brave.com/oB2UUGm_yxz3olLgPOGQa-JfW7R1JCUA_oP2-Z8T48E/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi9hL2FhL0xp/bmtlZEluXzIwMjEu/c3ZnLzIyMHB4LUxp/bmtlZEluXzIwMjEu/c3ZnLnBuZw" alt="linkedin"></a>
+                <!-- Add other social links here -->
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

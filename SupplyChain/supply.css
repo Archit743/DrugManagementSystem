@@ -1,3 +1,4 @@
+/* General page styling */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -6,11 +7,10 @@ body {
 }
 
 .background {
-    background-image: url("Screenshot\ 2024-08-19\ 212143.png");
+    background-image: url("../images/BackGround.png");
     min-height: 100vh; 
     width: 100%;
-    /* background-attachment: fixed; */
-    background-attachment:scroll;
+    background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,7 +27,7 @@ header {
     padding-bottom: 5px;
     height: 50px;
     width: auto;
-    object-fit:contain;
+    object-fit: contain;
 }
 
 .add-name {
@@ -61,6 +61,11 @@ header {
     width: auto;
 }
 
+.panel-ops {
+    display: flex;
+    gap: 20px;
+}
+
 .panel-ops button {
     margin-left: 20px;
     font-size: larger;
@@ -70,16 +75,11 @@ header {
     cursor: pointer;
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
-.panel-ops button:hover{
-    color: #fff; /* You can change the color to enhance the glow effect */
-    text-shadow: 0 0 8px #ffffff, /* White glow */
-                 0 0 16px #ffffff, /* Stronger white glow */
-                 0 0 24px #117acab0, /* Pinkish glow */
-                 0 0 32px #0c7de7c0; /* More intense pinkish glow */
-}
-.panel-ops {
-    display: flex;
-    gap: 20px;
+
+.panel-ops button:hover {
+    color: #fff;
+    text-shadow: 0 0 8px #ffffff61, 0 0 16px #aa4e4e, 0 0 24px #5d8db2b0, 0 0 32px #53799cc0;
+    transform: scale(1.2);
 }
 
 main {
@@ -87,14 +87,62 @@ main {
     padding: 50px;
 }
 
-.intro {
-    background-color: rgba(128, 128, 128, 0.7);
+.transparent-box {
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
-    border-radius: 10px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: inline-block; 
     max-width: 80%;
-    margin: auto;
+    margin: 20px auto;
 }
+
+.report-section {
+    margin-top: 30px;
+}
+
+/* Supply chain table styling */
+.supply-chain-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.supply-chain-table thead {
+    background-color: #333;
+    color: #fff;
+}
+
+.supply-chain-table th, .supply-chain-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.supply-chain-table td {
+    background-color: #fff;
+}
+
+.supply-chain-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.supply-chain-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+.on-track {
+    color: green;
+}
+
+.delayed {
+    color: red;
+}
+
+/* Footer styling */
 footer {
     margin-top: auto;
     background-color: #5497c1;
@@ -102,24 +150,36 @@ footer {
     padding: 20px;
     text-align: center;
 }
-#footerText{
+
+#footerText {
     color: white;
     text-align: center;
     padding: 30px 10px;
     font-size: 25px;
 }
-#links{
+
+#links {
     text-align: center;
     margin: 0 10px;
 }
-footer img{
+
+footer img {
     width: 50px;
     height: auto;
     padding: 20px 30px;
     vertical-align: middle;
 }
-a[href*="linkedin"] img{
+
+a[href*="linkedin"] img {
     width: 80px;
     height: auto;
     margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+    .panel-ops button {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }

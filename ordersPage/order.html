@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Inventory and Supply Chain Tracking System - Orders</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <div class="background">
+        <header>
+            <nav class="panel">
+                <div class="add-name">
+                    <img src="../images/logo.png" alt="logo" id="logo">DrugVault
+                </div>
+                <div class="panel-ops">
+                    <button onclick="window.location.href='../homePage/home.html';">Home</button>
+                    <button onclick="window.location.href='../Pharmacy/pharmacy.html';">Pharmacy</button>
+                    <button onclick="window.location.href='../SupplyChain/supply.html';">Supply Chain</button>
+                    <button style="text-decoration: underline;" onclick="location.reload()">Orders</button>
+                    <button onclick="window.location.href='../QualityControlPage/qc.html';">Quality Control</button>
+                    <button onclick="window.location.href='../reportsPage/report.html';">Reports</button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="intro transparent-box">
+                <h1>Orders Management</h1>
+                <p>View, track, and manage your orders efficiently to ensure timely deliveries and customer satisfaction.</p>
+            </div>
+            <hr>
+            <section class="order-section transparent-box">
+                <h2>Pending Orders</h2>
+                <table class="order-table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer Name</th>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Order Date</th>
+                            <th>Expected Delivery</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ORD12347</td>
+                            <td>John Doe</td>
+                            <td>Drug D</td>
+                            <td>50</td>
+                            <td>20/01/2024</td>
+                            <td>25/01/2024</td>
+                            <td>Pending</td>
+                        </tr>
+                        <tr>
+                            <td>ORD12348</td>
+                            <td>Jane Smith</td>
+                            <td>Drug A</td>
+                            <td>30</td>
+                            <td>21/01/2024</td>
+                            <td>26/01/2024</td>
+                            <td>Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="order-section transparent-box">
+                <h2>Completed Orders</h2>
+                <table class="order-table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer Name</th>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Order Date</th>
+                            <th>Delivery Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ORD12345</td>
+                            <td>Michael Johnson</td>
+                            <td>Drug B</td>
+                            <td>100</td>
+                            <td>15/01/2024</td>
+                            <td>20/01/2024</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>ORD12346</td>
+                            <td>Linda Williams</td>
+                            <td>Drug A</td>
+                            <td>200</td>
+                            <td>18/01/2024</td>
+                            <td>23/01/2024</td>
+                            <td>Completed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="order-section transparent-box">
+                <h2>Canceled Orders</h2>
+                <table class="order-table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer Name</th>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Order Date</th>
+                            <th>Cancellation Date</th>
+                            <th>Reason</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ORD12349</td>
+                            <td>David Brown</td>
+                            <td>Drug C</td>
+                            <td>150</td>
+                            <td>19/01/2024</td>
+                            <td>22/01/2024</td>
+                            <td>Out of Stock</td>
+                        </tr>
+                        <tr>
+                            <td>ORD12350</td>
+                            <td>Patricia Taylor</td>
+                            <td>Drug A</td>
+                            <td>120</td>
+                            <td>20/01/2024</td>
+                            <td>23/01/2024</td>
+                            <td>Customer Request</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div id="footersection">
+            <p id="footerText">Connect with us through our socials !!</p>
+            <div id="links">
+                <a href="https://www.linkedin.com/in/archit-gupta-77b287251/" id="linkedin">
+                    <img src="https://imgs.search.brave.com/oB2UUGm_yxz3olLgPOGQa-JfW7R1JCUA_oP2-Z8T48E/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi9hL2FhL0xp/bmtlZEluXzIwMjEu/c3ZnLzIyMHB4LUxp/bmtlZEluXzIwMjEu/c3ZnLnBuZw" alt="linkedin">
+                </a>
+                <a href="https://www.linkedin.com/in/archit-gupta-77b287251/" id="linkedin">
+                    <img src="https://imgs.search.brave.com/oB2UUGm_yxz3olLgPOGQa-JfW7R1JCUA_oP2-Z8T48E/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi9hL2FhL0xp/bmtlZEluXzIwMjEu/c3ZnLzIyMHB4LUxp/bmtlZEluXzIwMjEu/c3ZnLnBuZw" alt="linkedin">
+                </a>
+                <a href="https://www.linkedin.com/in/archit-gupta-77b287251/" id="linkedin">
+                    <img src="https://imgs.search.brave.com/oB2UUGm_yxz3olLgPOGQa-JfW7R1JCUA_oP2-Z8T48E/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi9hL2FhL0xp/bmtlZEluXzIwMjEu/c3ZnLzIyMHB4LUxp/bmtlZEluXzIwMjEu/c3ZnLnBuZw" alt="linkedin">
+                </a>
+                <a href="https://www.linkedin.com/in/archit-gupta-77b287251/" id="linkedin">
+                    <img src="https://imgs.search.brave.com/oB2UUGm_yxz3olLgPOGQa-JfW7R1JCUA_oP2-Z8T48E/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk

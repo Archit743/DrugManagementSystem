@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality Control Reports</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="qc.css">
+</head>
+<body>
+    <div class="background">
+        <header>
+            <nav class="panel">
+                <div class="add-name">
+                    <img src="../images/logo.png" alt="logo" id="logo">DrugVault
+                </div>
+                <div class="panel-ops">
+                    <button onclick="window.location.href='../homePage/home.html';">Home</button>
+                    <button onclick="window.location.href='../Pharmacy/pharmacy.html';">Pharmacy</button>
+                    <button onclick="window.location.href='../SupplyChain/supply.html';">Supply Chain</button>
+                    <button onclick="window.location.href='../ordersPage/order.html';">Orders</button>
+                    <button style="text-decoration: underline;" onclick="location.reload()">Quality Control</button>
+                    <button onclick="window.location.href='../reportsPage/report.html';">Reports</button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="intro transparent-box">
+                <h1>Quality Control Reports</h1>
+                <p>Monitor and analyze the quality control metrics to ensure the highest standards in your products.</p>
+            </div>
+            <hr>
+            <section class="report-section transparent-box">
+                <h2>Quality Check Summary</h2>
+                <table class="quality-control-table">
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Batch Number</th>
+                            <th>Inspection Date</th>
+                            <th>Inspector</th>
+                            <th>Status</th>
+                            <th>Comments</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Drug A</td>
+                            <td>BN1234</td>
+                            <td>10/01/2024</td>
+                            <td>John Doe</td>
+                            <td>Pass</td>
+                            <td>All tests passed.</td>
+                        </tr>
+                        <tr>
+                            <td>Drug B</td>
+                            <td>BN1235</td>
+                            <td>12/01/2024</td>
+                            <td>Jane Smith</td>
+                            <td>Fail</td>
+                            <td>Needs re-testing.</td>
+                        </tr>
+                        <tr>
+                            <td>Drug C</td>
+                            <td>BN1236</td>
+                            <td>15/01/2024</td>
+                            <td>John Doe</td>
+                            <td>Pass</td>
+                            <td>All tests passed.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div id="footersection">
+            <p id="footerText">Connect with us through our socials !!</p>
+            <div id="links">
+                <a href="https://www.linkedin.com/in/archit-gupta-77b287251/" id="linkedin"><img src="https://imgs.search.brave.com/oB2UUGm_yxz3olLgPOGQa-JfW7R1JCUA_oP2-Z8T48E/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi9hL2FhL0xp/bmtlZEluXzIwMjEu/c3ZnLzIyMHB4LUxp/bmtlZEluXzIwMjEu/c3ZnLnBuZw" alt="linkedin"></a>
+                <!-- Add other social links here -->
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
